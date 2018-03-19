@@ -481,7 +481,7 @@
       </lst>
       <lst name="slave">
         <str name="enable">${enable.slave:false}</str>
-        <str name="masterUrl">http://localhost:8984/solr/${solr.core.name}</str>
+        <str name="masterUrl">http://esgf-solr-master:8984/solr/${solr.core.name}</str>
         <str name="pollInterval">00:00:60</str>
       </lst>
   </requestHandler>

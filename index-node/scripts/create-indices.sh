@@ -35,8 +35,9 @@ if [ "$solr_mode" = "solrcloud" ]; then
         fi
     done
 else
-    echo "[ERROR] Only SolrCloud mode is supported for now"
-    exit 1
+	 echo "[INFO] Running Solr in non-cloud mode"
+#    echo "[ERROR] Only SolrCloud mode is supported for now"
+#    exit 1
 #    echo "[INFO] Creating Solr cores"
     # Standalone mode - create cores
 #    for name in "${INDEXES[@]}"; do
