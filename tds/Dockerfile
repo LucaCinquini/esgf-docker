@@ -19,7 +19,7 @@ FROM ${ESGF_HUB}/esgf-configure:${ESGF_VERSION} as configuration
 
 FROM openjdk:8-jdk AS esgf-tds-unpack
 
-ARG ESGF_REPO=http://dist.ceda.ac.uk/esgf
+ARG ESGF_REPO=http://aims1.llnl.gov/esgf
 
 # First, download and unpack THREDDS
 RUN mkdir /opt/thredds && \

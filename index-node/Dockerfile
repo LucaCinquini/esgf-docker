@@ -25,7 +25,7 @@ FROM ${ESGF_HUB}/esgf-configure:${ESGF_VERSION} as configuration
 FROM openjdk:8-jdk AS esg-search-unpack
 
 # Download and unpack war
-ARG ESGF_REPO=http://dist.ceda.ac.uk/esgf/dist
+ARG ESGF_REPO=http://aims1.llnl.gov/esgf/dist
 RUN mkdir /opt/esg-search && \
     cd /opt/esg-search && \
     TMPFILE=$(mktemp) && \

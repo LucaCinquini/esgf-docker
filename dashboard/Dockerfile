@@ -10,7 +10,7 @@ FROM $ESGF_IMAGES_HUB/esgf-tomcat:$ESGF_VERSION
 
 MAINTAINER ESGF <esgf-devel@lists.llnl.gov>
 
-ARG ESGF_REPO=http://distrib-coffee.ipsl.jussieu.fr/pub/esgf
+ARG ESGF_REPO=http://aims1.llnl.gov/esgf
 ENV DASHBOARD_HOME /usr/local/esgf-dashboard-ip
 
 # install library dependencies

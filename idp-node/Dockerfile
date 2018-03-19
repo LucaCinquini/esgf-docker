@@ -21,7 +21,7 @@ FROM ${ESGF_HUB}/esgf-configure:${ESGF_VERSION} as configuration
 FROM openjdk:8-jdk AS esgf-idp-unpack
 
 # Download and unpack esg-orp war
-ARG ESGF_REPO=http://dist.ceda.ac.uk/esgf/dist
+ARG ESGF_REPO=http://aims1.llnl.gov/esgf/dist
 RUN mkdir /opt/esgf-idp && \
     cd /opt/esgf-idp && \
     TMPFILE=$(mktemp) && \
