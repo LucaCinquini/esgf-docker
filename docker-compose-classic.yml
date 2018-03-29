@@ -276,6 +276,7 @@ services:
       - "$ESGF_CONFIG/secrets/cog-secret-key:/esg/secrets/cog-secret-key:ro"
       # Make sure the trusted certificate bundle is available
       - "$ESGF_CONFIG/certificates/esg-trust-bundle.pem:/esg/certificates/esg-trust-bundle.pem:ro"
+      #- /Users/cinquini/eclipse-workspace/cog:/usr/local/cog/cog_install
     depends_on:
       - esgf-configure
       - esgf-django
